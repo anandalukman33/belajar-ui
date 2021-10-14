@@ -5,10 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
-   <TextView
-       android:layout_width="wrap_content"
+
+   <Button
+       android:id="@+id/widget"
+       android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:text="Hello"/>
+       android:padding="10dp"
+       android:text="Widget"
+       android:onClick="jumpToWidget"/>
+
+   <Button
+       android:id="@+id/listViewActivity"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="10dp"
+       android:layout_below="@+id/widget"
+       android:text="Contoh List View"
+       android:onClick="jumpToImplementListView" />
+
+   <Button
+       android:id="@+id/recyclerviewActivity"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="10dp"
+       android:layout_below="@+id/listViewActivity"
+       android:text="Contoh RecyclerView"
+       android:onClick="jumpToImplementRecycleView" />
+
 </RelativeLayout>
