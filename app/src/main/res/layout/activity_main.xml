@@ -8,6 +8,14 @@
     android:padding="20dp"
     tools:context=".MainActivity">
 
+   <Button
+       android:id="@+id/login_activity"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="10dp"
+       android:text="Login Form"
+       android:onClick="jumpToLoginActivity"
+       />
 
    <Button
        android:id="@+id/widget"
@@ -15,6 +23,7 @@
        android:layout_height="wrap_content"
        android:padding="10dp"
        android:text="Widget"
+       android:layout_below="@+id/login_activity"
        android:onClick="jumpToWidget"/>
 
    <Button
